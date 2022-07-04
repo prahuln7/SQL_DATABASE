@@ -23,4 +23,6 @@ resource "azurerm_cosmosdb_account" "cosmosdb" {
     location          = var.location
     failover_priority = 0
   }
+  access_key_metadata_writes_enabled = false
+  public_network_access_enabled = false
 }
