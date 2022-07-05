@@ -12,6 +12,7 @@ resource "azurerm_mssql_server" "mssql" {
   administrator_login_password = var.mssql_password
   minimum_tls_version          = var.minimum_tls_version
   tags                         = var.tags
+   public_network_access_enabled = false
 }
 
  resource "azurerm_mssql_server_transparent_data_encryption" "example" {
